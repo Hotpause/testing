@@ -1,18 +1,19 @@
 {
   "name": "testing",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "jest": {
+    "transform": {}
+  },
   "devDependencies": {
-    "@babel/core": "^7.24.4",
-    "@babel/preset-env": "^7.24.4",
-    "babel-jest": "^29.7.0",
     "jest": "^29.7.0"
   }
 }
